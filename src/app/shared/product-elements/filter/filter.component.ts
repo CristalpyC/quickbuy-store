@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   templateUrl: './filter.component.html',
 })
 export class FilterComponent {
-
+  getValues(event: Event){
+    const btnValue = event.target as HTMLInputElement
+    console.log(btnValue.value);
+  }
 }
